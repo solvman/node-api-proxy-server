@@ -13,4 +13,6 @@ app.use("/api", require("./routes"));
 //Enable cors
 app.use(cors());
 
-app.listen(PORT, HOST, () => console.log(`Server is running on port ${PORT}`));
+app.listen(PORT, HOST, () =>
+  console.log(`Server is running ${HOST} on port ${PORT}`)
+);
