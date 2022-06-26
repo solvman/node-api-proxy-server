@@ -2,10 +2,6 @@ const express = require("express");
 const router = express.Router();
 const axios = require("axios");
 
-//Env var
-
-const API_BASE_URL = process.env.API_BASE_URL;
-
 router.get("/", async (req, res) => {
   try {
     const response = await axios("https://zenquotes.io/api/random");
